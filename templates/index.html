@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+<div class="modal fade" id="welcomeModel" tabindex="-1">
+
+
+
+</div>
+
+<h1>Dashboard</h1>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Students</h5>
+                <p class="card-text display-4">{{ total_students }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Tasks</h5>
+                <p class="card-text display-4">{{ total_tasks }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-white bg-warning mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Attendance Records</h5>
+                <p class="card-text display-4">{{ total_attendance }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Total Assigned Tasks</h5>
+                <p class="card-text display-4">{{ total_tasks }}</p>   
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card ">
+            <div class="card-body bg-dark text-white">
+                <h4 class="card-title">Student Task Manager</h4><br>
+                <p class="card-text">Flask + MySQL Backend Application.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
