@@ -109,6 +109,7 @@ def add_student():
         connection.close()
 
         return redirect('/students')
+    
     return render_template('add_student.html')
 
 
